@@ -11,7 +11,8 @@ app.use(express.json());
 const smsUrl = process.env.TWILIO_SID;
 const smsApiKey = process.env.TWILIO_AUTH_TOKEN;
 const twilioPhoneNumber = process.env.TWILIO_PHONE_NUMBER;
-
+console.log(smsUrl);
+console.log("jai");
 const client = twilio(smsUrl, smsApiKey);
 
 const generateOtp = () => {
